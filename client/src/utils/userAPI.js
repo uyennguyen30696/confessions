@@ -13,7 +13,7 @@ export default {
         return axios.post("/api/logout", userData);
     },
     getUserData: function (userData) {
-        return axios.get("/api/user_data/",
+        return axios.get("/api/user_data",
         {
             headers:  {
                 Authorization: `Bearer ${sessionStorage.getItem("myToken")}`
