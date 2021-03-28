@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import API from "../../utils/profileAPI";
+import API from "../../utils/newsfeedAPI";
 import APIuser from "../../utils/userAPI";
 
 function PostCreateBox() {
