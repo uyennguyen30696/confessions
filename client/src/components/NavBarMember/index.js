@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
 import API from "../../utils/userAPI";
 
@@ -20,7 +21,7 @@ function NavBarMember() {
 
     return (
         <Navbar bg="white" expand="lg">
-            <Navbar.Brand href="/member">Welcome "User"</Navbar.Brand>
+            <Navbar.Brand href="/member">Confessions</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
@@ -39,7 +40,7 @@ function NavBarMember() {
                 </Nav>
                 <Form inline>
                     <FormControl type="text" placeholder="Search..." className="mr-sm-2" />
-                    <Button variant="outline-success">Search</Button>
+                    <Button id="search-button" variant="outline-success">Search</Button>
                 </Form>
             </Navbar.Collapse>
         </Navbar>

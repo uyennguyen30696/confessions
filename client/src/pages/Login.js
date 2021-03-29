@@ -1,10 +1,11 @@
 import React from "react";
+import "../styling/login.css";
 import NavBarWelcome from "../components/NavBarWelcome";
-import Login from "../components/Login"
+import Login from "../components/Login";
 
 function Loginpage() {
   return (
-    <div>
+    <div id="login-page">
       <NavBarWelcome />
       <Login />
     </div>

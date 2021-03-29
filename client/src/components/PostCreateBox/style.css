@@ -1,41 +1,33 @@
-.PostCreateBox {
+#PostCreateBox {
+    position: relative;
     border: solid 2px;
-    margin: 30px;
-    border-color: gray;
-    font-size: larger;
+    border-color: #B7B7A4;
+    border-radius: 0.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.20);
 }
 
-.header {
-    text-align: left;
-    color: gray;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align: left;
+.new-confession {
+    color: #2A381A;
+    font-size: 1.2em;
 }
 
+.header, 
 .details {
-    color: gray;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align: left;
-    margin: 0 40px 0 10px;
-    align-self: left;
+    color: #6B705C;
 }
 
 .post-button {
-    color: rgb(50, 48, 56);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin: 10px;
+    border-color: #2A381A;
+    background-color: transparent;
+    color: #2A381A;
+    font-weight: bold;
 }
 
-.newc {
-    color: gray;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align: left;
-}
-
-.box {
-    margin: 0;
-}
-
-.headerbox {
-    margin: 30px, 0, 30px, 0;
+.post-button:hover {
+    border-color: transparent;
+    background-color: #2A381A;
+    color: white;
 }

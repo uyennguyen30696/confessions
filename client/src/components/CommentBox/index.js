@@ -45,7 +45,11 @@ function CreateCommentBox(props) {
 
     return (
         <div className="CreateCommentBox">
-            {comments.map((comment, i) => <p key={`comment${i}`}>{comment}</p>)}
+            {comments.map((comment, i) => 
+                <div className="each-comment-wrapper">
+                    <p key={`comment${i}`}>{comment}</p>
+                </div>
+            )}
             <Form>
                 <Form.Group className="comment" controlId="formBasicComment">
                     <Form.Label>Comment:</Form.Label>

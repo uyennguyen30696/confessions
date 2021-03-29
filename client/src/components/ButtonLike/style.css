@@ -1,0 +1,13 @@
+.like {
+    margin: 5px;
+    margin-bottom: 20px;
+    border: solid 1px;
+    border-radius: 0.3rem;
+    border-color: #6B705C;
+    color: #6B705C;
+}
+
+.like:hover {
+    background-color: #6B705C;
+    color: white;
+}

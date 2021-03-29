@@ -46,11 +46,11 @@ function PostCreateBox() {
     };
 
     return (
-        <div className="PostCreateBox">
+        <div id="PostCreateBox">
             <Form>
-                <Form.Label className="newc"><strong>New confession: </strong></Form.Label>
+                <Form.Label className="new-confession"><strong>New confession </strong></Form.Label>
                 <Form.Group className="box" controlId="formBasicEmail">
-                    <Form.Label className="header">Header: </Form.Label>
+                    <Form.Label className="header">Summary: </Form.Label>
                     <Form.Control className="headerbox" onChange={(event) => updateTitle(event)} type="email" placeholder="A short summary of what your confession is about." />
                 </Form.Group>
 

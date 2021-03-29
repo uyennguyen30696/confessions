@@ -1,20 +1,24 @@
-.form-group {
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 10px;
-}
-
-.h1,
-h1 {
-  text-align: center;
-}
-
-.btn {
-  margin-left: 30%;
-}
-
 .login-form {
-  margin-bottom: 80px;
-  border: solid, 4px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    width: 70%;
+    max-width: 400px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 100px;
+    padding-bottom: 400px;
+}
+
+#login-title {
+    padding-bottom: 30px;
+    color: #2A381A;
+    text-shadow: 2px 2px grey;
+}
+
+.form-group {
+    font-weight: bold !important;
+    text-shadow: 2px 2px white !important;
+}
+
+#login-button {
+    background-color: #2A381A;
 }

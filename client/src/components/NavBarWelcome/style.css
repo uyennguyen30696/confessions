@@ -1,0 +1,22 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #B7B7A4 !important;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #760410 !important;
+    text-shadow: 1px 1px grey;
+}
+
+.nav-link {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #9D0615 !important;
+    text-shadow: 1px 1px grey;
+}
