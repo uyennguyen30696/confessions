@@ -3,10 +3,23 @@
 ## Description
 Confessions is a social platform that allows users to post and share thoughts anonymously.
 
+Checkout the deployed application [here](https://confessions-by-uyen.herokuapp.com/).
+
+* Notes: This is an enhancement based on the [original work](https://github.com/Rudy-Menjivar/confessions) of me and other team members. Many features are still under construction.
+
 ## Features
 * Post and share thoughts on different category feeds (Relationships, Guilts,Confessions, etc..)
 * Like and comment on other users' posts
 * Report buttons for users who violate policies of the platform or behave inappropriately
+
+## Screenshots
+
+![Welcome page](./client/src/images/welcome-page-screenshot.png)
+
+![Newsfeed page](./client/src/images/newsfeed-screenshot.png)
+
+![Newsfeed page](./client/src/images/newsfeed-page-screenshot.png)
+
 
 ## Technologies
 * ReactJS
