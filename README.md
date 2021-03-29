@@ -18,7 +18,7 @@ Checkout the deployed application [here](https://confessions-by-uyen.herokuapp.c
 
 ![Newsfeed page](./client/src/images/newsfeed-screenshot.png)
 
-![Newsfeed page](./client/src/images/newsfeed-page-screenshot.png)
+![Newsfeed page](./client/src/images/newsfeed-post-screenshot.png)
 
 
 ## Technologies
