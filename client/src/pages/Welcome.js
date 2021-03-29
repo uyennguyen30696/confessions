@@ -20,12 +20,6 @@ function Welcome() {
                     Join our community for peace and support or read many confessions left by others.
                 </h3>
             </div>
-            <p>
-            {/* Image by greissdesign from Pixabay 
-            Image by Gordon Johnson from Pixabay
-            by Please Don't sell My Artwork AS IS from Pixabay
-            Image by SignsPub from Pixabay    */}
-            </p>
         </div>
     );
 };
