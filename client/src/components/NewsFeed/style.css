@@ -1,25 +1,35 @@
+#newsfeed-page {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+#newsfeed-title {
+    text-align: center;
+    color: #760410;
+}
+
+#hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-color: #760410;
+}
+
+#newsfeed-cards-container {
+    margin: 30px;
+}
+
 .newsfeed-card {
-    border: solid 1px;
-    margin: 130px;
-    margin-bottom: 100px;
-    margin-top: 20px;
+    position: relative;
+    border: solid 2px;
+    border-color: #B7B7A4;
+    border-radius: 0.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    padding: 20px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.20);
 }
 
-.post-owner, 
-.newsfeed-posts, 
-.reaction-box, 
-.comments,  
-.comment-box {
-    margin: 10px;
-    background-image: url(../../images/background1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.newsfeed-background {
-    background-color: rgb(163, 179, 182);
-    background-image: url(../../images/background1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.title {
+    color: #2A381A;
 }

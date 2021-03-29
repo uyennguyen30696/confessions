@@ -3,7 +3,7 @@ import "./style.css";
 
 function NewsFeedCard({ children }) {
     return (
-        <div className="newsfeed-confessions">
+        <div className="newsfeed-cards-wrapper">
             { children }
         </div>
     );

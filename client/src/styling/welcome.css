@@ -1,0 +1,36 @@
+html, body{
+    overflow-x: hidden;
+}
+
+#welcome-page {
+    /* Image by SignsPub from Pixabay */
+    background-image: url("../images/dandelion-335222_1280.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.welcome {
+    text-align: center;
+    padding: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 400px;
+}
+
+#welcome-text {
+    text-shadow: 2px 2px grey;
+    color: #2A381A;
+    background-color: white;
+}
+
+#greeting {
+    text-shadow: 1px 1px grey;
+    color: #6B705C;
+    background-color: white;
+}
+
+#dandelion-background {
+    position: absolute;
+    z-index: -1;
+}

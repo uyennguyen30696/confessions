@@ -29,59 +29,65 @@ function NewsFeed() {
     };
 
     return (
-        <div className="newsfeed-background">
+        <div id="newsfeed-page">
             <NavBarMember />
             <section>
                 <ProfileInfo />
             </section>
-            <h1>News Feed</h1>
-            <section>
-                <PostCreateBox />
-            </section>
-            {confessions.length ? (
+            <h1 id="newsfeed-title">News Feed</h1>
+            <section id="newsfeed-cards-container">
                 <div>
-                    {confessions.map(confession => (
-                        <NewsFeedCard key={confession._id}>
-                            <div className="newsfeed-card">
-                                <div className="post-owner">
-                                    <h5>Username: {confession.owner}</h5>
-                                </div>
-                                <h5><strong>{confession.title}</strong></h5>
-                                <div className="newsfeed-posts">
-                                    <p>{confession.content}</p>
-                                </div>
-                                <div className="reaction-box">
-                                    <LikeButton
-                                        className="like"
-                                        id={confession._id}
-                                        value={confession.likes}
-                                        loadConfessions={loadConfessions}
-                                    />
-                                    <DislikeButton
-                                        className="dislike"
-                                        id={confession._id}
-                                        value={confession.dislikes}
-                                        loadConfessions={loadConfessions}
-                                    />
-                                    <ReportButton 
-                                        className="report"
-                                        id={confession._id}
-                                        value={confession.reported}
-                                        loadConfessions={loadConfessions}
-                                    />
-                                    <CreateCommentBox
-                                        className="comment" 
-                                        onClick={() => CreateCommentBox()}
-                                        id={confession._id}>Comments: {confession.comments}
-                                        </CreateCommentBox>
-                                </div>
-                            </div>
-                        </NewsFeedCard>
-                    ))}
+                    <PostCreateBox />
                 </div>
-            ) : (
-                <h3>Nothing in your newsfeed yet!</h3>
-            )}
+                <hr id="hr"></hr>
+                {confessions.length ? (
+                    <div>
+                        {confessions.map(confession => (
+                            <NewsFeedCard key={confession._id}>
+                                <div className="newsfeed-card">
+                                    <div className="post-owner">
+                                        <h5>{confession.owner}</h5>
+                                    </div>
+                                    <br></br>
+                                    <h5 className="title"><strong>{confession.title}</strong></h5>
+                                    <br></br>
+                                    <div className="newsfeed-posts">
+                                        <p>{confession.content}</p>
+                                    </div>
+                                    <br></br>
+                                    <div className="reaction-box">
+                                        <LikeButton
+                                            className="like"
+                                            id={confession._id}
+                                            value={confession.likes}
+                                            loadConfessions={loadConfessions}
+                                        />
+                                        <DislikeButton
+                                            className="dislike"
+                                            id={confession._id}
+                                            value={confession.dislikes}
+                                            loadConfessions={loadConfessions}
+                                        />
+                                        <ReportButton
+                                            className="report"
+                                            id={confession._id}
+                                            value={confession.reported}
+                                            loadConfessions={loadConfessions}
+                                        />
+                                        <CreateCommentBox
+                                            className="comment"
+                                            onClick={() => CreateCommentBox()}
+                                            id={confession._id}>Comments: {confession.comments}
+                                        </CreateCommentBox>
+                                    </div>
+                                </div>
+                            </NewsFeedCard>
+                        ))}
+                    </div>
+                ) : (
+                    <h3>Nothing in your newsfeed yet!</h3>
+                )}
+            </section>
         </div>
     );
 };

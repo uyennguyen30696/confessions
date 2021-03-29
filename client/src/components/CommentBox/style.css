@@ -1,7 +1,26 @@
-.comment {
-    margin: 10px;
-    color: gray;
+.form-label {
+    color: #6B705C;
 }
+
+.each-comment-wrapper {
+    border: solid 1px;
+    border-color: transparent;
+    border-radius: 0.5rem;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #E4E4DD;
+}
+
 .commentButton {
-    margin: 10px;
+    border-color: #2A381A;
+    background-color: transparent;
+    color: #2A381A;
+    font-weight: bold;
+}
+
+.commentButton:hover {
+    border-color: transparent;
+    background-color: #2A381A;
+    color: white;
 }

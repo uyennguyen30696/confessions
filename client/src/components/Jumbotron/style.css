@@ -1,12 +1,24 @@
-#logo {
-  position: relative;
-  width: 30%;
-  max-height: 300px;
-  display: block;
-  margin: auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 
 .jumbotron {
-  padding: 10px;
-  margin-top: auto;
+    margin-top: 50px;
+    background-color: rgba(0,0,0,0.10);
+    color: #4F030A;
+}
+
+#confessions {
+    font-size: 4em;
+    font-family: 'Bungee Shade', cursive;
+}
+
+@media(max-width: 575px) {
+    #confessions {
+        font-size: 3em;
+    }
+}
+
+@media(max-width: 435px) {
+    #confessions {
+        font-size: 2em;
+    }
 }

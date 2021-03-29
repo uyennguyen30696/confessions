@@ -1,3 +1,24 @@
-.signup {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+.signup-form {
+    position: relative;
+    width: 70%;
+    max-width: 400px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 100px;
+    padding-bottom: 400px;
+}
+
+#signup-title {
+    padding-bottom: 30px;
+    color: #2A381A;
+    text-shadow: 2px 2px grey;
+}
+
+.form-group {
+    font-weight: bold !important;
+    text-shadow: 2px 2px white !important;
+}
+
+#signup-button {
+    background-color: #2A381A;
 }

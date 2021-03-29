@@ -13,7 +13,6 @@ function ProfileInfo() {
     function loadUserData() {
         API.getUserData()
             .then(res =>
-                // console.log(res.data.user.username),
                 setusername(res.data.user.username)
             )
             .catch(err => console.log(err));
@@ -22,8 +21,7 @@ function ProfileInfo() {
     return (
         <div>
             <div className="profileInfo-container">
-                <p>Hello {username}</p>
-                <p>Info: (...)</p>
+                <h3>Hello {username} 👋 😙</h3>
             </div>
         </div>
     );

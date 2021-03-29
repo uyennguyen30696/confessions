@@ -1,0 +1,12 @@
+.report {
+    margin: 5px;
+    border: solid 1px;
+    border-radius: 0.3rem;
+    border-color: #9D0615;
+    color: #9D0615;
+}
+
+.report:hover {
+    background-color: #9D0615;
+    color: white;
+}

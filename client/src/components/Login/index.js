@@ -52,7 +52,7 @@ function Login() {
         className="login-form"
       >
         <Form.Group controlId="formGroupUsername">
-          <h2 className="animate__animated animate__fadeIn">Log In</h2>
+          <h2 id="login-title" className="animate__animated animate__fadeIn">Login</h2>
           <Form.Label>
             Username
           </Form.Label>
@@ -77,6 +77,7 @@ function Login() {
           />
         </Form.Group>
         <Button 
+          id="login-button"
           onClick={handleLoginForm}
           variant="dark"
           type="submit"

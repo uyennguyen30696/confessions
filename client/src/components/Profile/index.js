@@ -39,7 +39,10 @@ function Profile() {
     return (
         <div className="profileback">
             <NavBarMember/>
-            <h1><strong>My Confessions</strong></h1>
+            <br></br>
+            <br></br>
+            <br></br>
+            <h1><strong>Under construction - Comming soon</strong></h1>
             <div className="profile-container">
                 <section>
                     <ProfileInfo />
