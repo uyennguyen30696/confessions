@@ -5,11 +5,22 @@ const db = require("../models");
 module.exports = {
     findAll: function (req, res) {
         db.Confession
-        .find(req.query)
+        .find(req.query).sort({ date: -1 })
         .then(dbAllConfession => res.json(dbAllConfession))
         .catch(err => 
             res.status(422).json(err));
     },
+    // Testing
+    // ~~~~~~~~~~~~
+    findAllByUsername: function (req, res) {
+        console.log(req.username)
+        db.Confession
+        .find({ owner: req.body.username })
+        .then(dbAllByUsername => res.json(dbAllByUsername))
+        .catch(err => 
+            res.status(422).json(err));
+    },
+    // ~~~~~~~~~~~~~~~
     findById: function (req, res) {
         db.Confession
         .findById(req.params.id)
