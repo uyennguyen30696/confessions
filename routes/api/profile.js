@@ -3,7 +3,8 @@ const confessionController = require("../../controllers/confessionController");
 
 // Matches with "/api/profile/"
 router.route("/")
-    .get(confessionController.findAll)
+    // .get(confessionController.findAll)
+    .get(confessionController.findAllByUsername)
     .post(confessionController.create);
 
 // Matches with "/api/profile/:id"
