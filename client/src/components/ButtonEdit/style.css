@@ -1,0 +1,13 @@
+.edit {
+    margin: 5px;
+    margin-bottom: 20px;
+    border: solid 1px;
+    border-radius: 0.3rem;
+    border-color: #4D88A8;
+    color: #4D88A8;
+}
+
+.edit:hover {
+    background-color: #4D88A8;
+    color: white;
+}

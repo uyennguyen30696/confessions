@@ -1,9 +1,12 @@
 import React from "react";
+import "./style.css";
 
 function EditButton(props) {
     return (
-        <button>
-            <span {...props} role="button">Edit</span>
+        <button
+            className={props.className}
+        >
+            Edit
         </button>
     );
 };

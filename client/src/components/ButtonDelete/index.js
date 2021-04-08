@@ -1,9 +1,10 @@
 import React from "react";
+import "./style.css";
 
 function DeleteButton(props) {
     return (
-        <button>
-            <span {...props} role="button">Delete</span>
+        <button {...props}>
+            Delete
         </button>
     );
 };

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import NavBarMember from "../NavBarMember";
 import API from "../../utils/profileAPI";
+import APIuser from "../../utils/userAPI";
 import ProfileInfo from "../ProfileInfo";
 import PostCreateBox from "../PostCreateBox";
 import PostCard from "../PostCard";
@@ -15,14 +16,25 @@ function Profile() {
     // Setting initial state of confession posts
     const [posts, setPosts] = useState([]);
 
+    const [ username, setusername ] = useState("");
+
     // Load all confessions and store them with setConfessions
     useEffect(() => {
+        loadUserData();
         loadPosts();
     }, []);
 
+    function loadUserData() {
+        APIuser.getUserData()
+            .then(res =>
+                setusername(res.data.user.username)
+            )
+            .catch(err => console.log(err));
+    };
+
     // Load all confession posts and set them to confessions
     function loadPosts() {
-        API.getConfessions()
+        API.getConfessions({username})
             .then(res =>
                 setPosts(res.data)
             )
@@ -37,7 +49,7 @@ function Profile() {
     };
 
     return (
-        <div className="profileback">
+        <div id="profile-page">
             <NavBarMember/>
             <br></br>
             <br></br>
@@ -50,12 +62,15 @@ function Profile() {
                 <section>
                     <PostCreateBox />
                 </section>
+                <hr id="hr"></hr>
                 <section>
                     {posts.length ? (
                         <div>
                             {posts.map(post => (
                                 <PostCard key={post._id}>
-                                    <h5><strong>{post.title}</strong></h5>
+                                    <br></br>
+                                    <h5 className="title"><strong>{post.title}</strong></h5>
+                                    <br></br>
                                     <p>{post.content}</p>
                                     <LikeButton
                                         className="like"
@@ -69,9 +84,20 @@ function Profile() {
                                         value={post.dislikes}
                                         loadConfessions={loadPosts}
                                     />
-                                    <EditButton />
-                                    <DeleteButton onClick={() => deleteOneConfession(post._id)} />
-                                    <CreateCommentBox className="comment" onClick={() => CreateCommentBox()} id={post._id}>Comments: {post.comments}</CreateCommentBox>
+                                    <EditButton 
+                                        className="edit"
+                                        id={post._id}
+                                    />
+                                    <DeleteButton 
+                                        className="delete"
+                                        id={post._id}
+                                        onClick={() => deleteOneConfession(post._id)} 
+                                    />
+                                    <CreateCommentBox 
+                                        className="comment" 
+                                        onClick={() => CreateCommentBox()} 
+                                        id={post._id}>Comments: {post.comments}
+                                    </CreateCommentBox>
                                 </PostCard>
                             ))}
                         </div>
