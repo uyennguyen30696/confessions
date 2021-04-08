@@ -13,9 +13,9 @@ module.exports = {
     // Testing
     // ~~~~~~~~~~~~
     findAllByUsername: function (req, res) {
-        console.log(req.username)
+        console.log(req.body.username)
         db.Confession
-        .find({ owner: req.body.username })
+        .find({ owner: "test" })
         .then(dbAllByUsername => res.json(dbAllByUsername))
         .catch(err => 
             res.status(422).json(err));
