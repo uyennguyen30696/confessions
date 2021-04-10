@@ -54,7 +54,7 @@ function Profile() {
             <br></br>
             <br></br>
             <br></br>
-            <h1><strong>Under construction - Comming soon</strong></h1>
+            <h1 id="construction"><strong>Under construction - Comming soon</strong></h1>
             <div className="profile-container">
                 <section>
                     <ProfileInfo />

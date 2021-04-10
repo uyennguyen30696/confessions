@@ -15,7 +15,7 @@ function Welcome() {
                 <br></br>
                 <br></br>
                 <h3 id="greeting">
-                    Anonimous confession is a great way to relieve stress and anxiety. 
+                    Anonymous confession is a great way to relieve stress and anxiety. 
                     <br></br>
                     Join our community for peace and support or read many confessions left by others.
                 </h3>
