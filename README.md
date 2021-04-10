@@ -14,7 +14,7 @@ Checkout the deployed application [here](https://confessions-by-uyen.herokuapp.c
 
 ## Screenshots
 
-![Welcome page](./client/src/images/welcome-page-screenshot.png)
+![Welcome page](./client/src/images/welcome-screenshot.png)
 
 ![Newsfeed page](./client/src/images/newsfeed-screenshot.png)
 
