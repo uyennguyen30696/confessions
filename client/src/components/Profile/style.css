@@ -6,3 +6,8 @@
 .profile-container {
     margin: 30px;
 }
+
+#construction {
+    display: flex;
+    justify-content: center;
+}
